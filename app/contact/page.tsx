@@ -23,12 +23,32 @@ export default function Contact() {
     )
   }, [])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false)
+  const [responseMsg, setResponseMsg] = useState<string | null>(null)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" })
+    setLoading(true)
+    setResponseMsg(null)
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+      const data = await res.json()
+      if (res.ok) {
+        setResponseMsg("Message sent successfully!")
+        setFormData({ name: "", email: "", subject: "", message: "" })
+      } else {
+        setResponseMsg(data.error || "Failed to send message.")
+      }
+    } catch (err) {
+      setResponseMsg("An error occurred. Please try again later.")
+    }
+    setLoading(false)
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -188,10 +208,16 @@ export default function Contact() {
                 <button
                   type="submit"
                   className="w-full bg-teal-900 text-white px-8 py-3 rounded-lg hover:bg-teal-900/90 transition-colors font-medium flex items-center justify-center gap-2"
+                  disabled={loading}
                 >
                   <Send size={20} />
-                  Send Message
+                  {loading ? "Sending..." : "Send Message"}
                 </button>
+                {responseMsg && (
+                  <div className={`mt-4 text-center ${responseMsg.includes("success") ? "text-green-600" : "text-red-600"}`}>
+                    {responseMsg}
+                  </div>
+                )}
               </form>
             </div>
           </div>

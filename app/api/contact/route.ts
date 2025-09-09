@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { getServerSession } from "next-auth"
 import { authOptions } from "@/lib/auth"
+import nodemailer from "nodemailer"
 
 // Mock data for contact messages
 const mockMessages = [
@@ -88,6 +89,23 @@ export async function POST(request: NextRequest) {
       read: false,
       createdAt: new Date().toISOString()
     }
+
+    // Configure your SMTP transporter (use environment variables in production)
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASS,
+      },
+    });
+
+    await transporter.sendMail({
+      from: email,
+      to: "ibouhaamin@gmail.com",
+      subject: `New Contact Message from ${name}`,
+      text: message,
+      html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Message:</strong><br/>${message}</p>`
+    });
 
     // Here you could also send an email notification to admin
     // await sendEmailNotification(newMessage)
