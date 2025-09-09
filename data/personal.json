@@ -1,0 +1,72 @@
+{
+  "name": "Mohamed Amine IBOUHA",
+  "title": "Full Stack Developer",
+  "bio": "Passionate Full Stack Developer crafting digital experiences with clean code, innovative design, and cutting-edge technologies. Specializing in React, Next.js, and Node.js development.",
+  "email": "ibouhaamin@gmail.com",
+  "phone": "+212 674 880 979",
+  "location": "Agadir, Morocco",
+  "social": {
+    "github": "https://github.com/ibouha",
+    "linkedin": "https://linkedin.com/in/mohamed-amine-ibouha",
+    "twitter": "https://twitter.com/ibouha_dev"
+  },
+  "skills": [
+    {
+      "category": "Frontend",
+      "technologies": [
+        { "name": "React", "level": 95, "icon": "⚛️" },
+        { "name": "Next.js", "level": 90, "icon": "▲" },
+        { "name": "TypeScript", "level": 88, "icon": "📘" },
+        { "name": "JavaScript", "level": 95, "icon": "🟨" },
+        { "name": "HTML5", "level": 98, "icon": "🌐" },
+        { "name": "CSS3", "level": 92, "icon": "🎨" },
+        { "name": "Tailwind CSS", "level": 90, "icon": "💨" }
+      ]
+    },
+    {
+      "category": "Backend",
+      "technologies": [
+        { "name": "Node.js", "level": 88, "icon": "🟢" },
+        { "name": "Express.js", "level": 85, "icon": "🚂" },
+        { "name": "Python", "level": 82, "icon": "🐍" },
+        { "name": "PHP", "level": 75, "icon": "🐘" },
+        { "name": "Laravel", "level": 72, "icon": "🔴" }
+      ]
+    },
+    {
+      "category": "Database",
+      "technologies": [
+        { "name": "PostgreSQL", "level": 85, "icon": "🐘" },
+        { "name": "MongoDB", "level": 82, "icon": "🍃" },
+        { "name": "MySQL", "level": 88, "icon": "🐬" }
+      ]
+    },
+    {
+      "category": "DevOps & Tools",
+      "technologies": [
+        { "name": "Docker", "level": 80, "icon": "🐳" },
+        { "name": "AWS", "level": 75, "icon": "☁️" },
+        { "name": "Git", "level": 92, "icon": "📚" },
+        { "name": "Linux", "level": 85, "icon": "🐧" },
+        { "name": "CI/CD", "level": 75, "icon": "🔄" }
+      ]
+    },
+    {
+      "category": "Design & Animation",
+      "technologies": [
+        { "name": "Figma", "level": 85, "icon": "🎨" },
+        { "name": "GSAP", "level": 88, "icon": "✨" },
+        { "name": "Framer Motion", "level": 82, "icon": "🎬" },
+        { "name": "Three.js", "level": 70, "icon": "🎲" }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Junior Full Stack Developer",
+      "company": "Tech Solutions Inc.",
+      "period": "2023 - 2024",
+      "description": "Led development of scalable web applications using React, Next.js, and Node.js. Implemented modern UI/UX designs and optimized application performance."
+    }
+  ]
+}

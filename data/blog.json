@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Building Scalable React Applications",
+      "excerpt": "Learn best practices for building large-scale React applications that are maintainable and performant.",
+      "date": "2024-01-15",
+      "readTime": "8 min read",
+      "tags": ["React", "JavaScript", "Performance"],
+      "slug": "building-scalable-react-applications"
+    },
+    {
+      "id": 2,
+      "title": "Getting Started with Next.js 14",
+      "excerpt": "A comprehensive guide to the latest features in Next.js 14 and how to leverage them in your projects.",
+      "date": "2024-01-10",
+      "readTime": "6 min read",
+      "tags": ["Next.js", "React", "Web Development"],
+      "slug": "getting-started-nextjs-14"
+    },
+    {
+      "id": 3,
+      "title": "TypeScript Best Practices",
+      "excerpt": "Essential TypeScript patterns and practices that will make your code more robust and maintainable.",
+      "date": "2024-01-05",
+      "readTime": "10 min read",
+      "tags": ["TypeScript", "JavaScript", "Best Practices"],
+      "slug": "typescript-best-practices"
+    }
+  ]
+}

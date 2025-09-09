@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "bahia_jewelry E-Commerce Platform",
+      "description": "A full-stack e-commerce solution built with Next.js, Stripe, and PostgreSQL",
+      "image": "/Screenshot 2025-09-09 143450.png",
+      "technologies": ["Next.js", "TypeScript", "MySQL"],
+      "github": "https://github.com/ibouha/bahia_jewelry",
+      "live": "",
+      "featured": true
+    },
+   
+  
+    {
+      "id": 4,
+      "title": "HT Architecte",
+      "description": "A modern architectural portfolio website showcasing projects and services.",
+      "image": "/htarchi.png",
+      "technologies": ["Next.js", "Tailwind CSS","Mongodb"],
+      "github": "https://github.com/ibouha/HT-Architecte",
+      "live": "https://ht-architecte.vercel.app",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "Events Management ",
+      "description": "A full-stack web app for managing events, registrations, and participants.",
+      "image": "/eventmanament.png",
+      "technologies": ["PHP", "MySQL", "Tailwind CSS", "JavaScript"],
+      "github": "https://github.com/ibouha/Events-Managment-File-Rouge",
+      "live": "https://events-managment-file-rouge.vercel.app/",
+      "featured": true
+    },
+    {
+      "id": 6,
+      "title": "Talib PFE",
+      "description": "full-stack web application for students studying away from their hometowns. The app facilitate housing, item exchange, roommate searching.",
+      "image": "/placeholder.svg?height=300&width=500",
+      "technologies": ["React", "MySQL", "TypeScript", "Tailwind CSS","PHP"],
+      "github": "https://github.com/ibouha/Talib-PFE",
+      "live": "",
+      "featured": false
+    }
+  ]
+}
